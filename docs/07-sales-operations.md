@@ -149,36 +149,36 @@ Gartner finds that 72% of organisations save time with AI but do not reinvest it
 ### Multi-Agent Architecture Diagram
 
 ```
-┌──────────────────────────────────────────────────────────────────────┐
-│                          CRM Systems                                  │
-│      Salesforce │ HubSpot │ Microsoft Dynamics │ Custom CRM           │
-└─────────────────────────────┬────────────────────────────────────────┘
-                              │ Signals, Events, Records
-┌─────────────────────────────▼────────────────────────────────────────┐
+┌──────────────────────────────────────────────────────────────────────  ┐
+│                          CRM Systems                                   │
+│      Salesforce │ HubSpot │ Microsoft Dynamics │ Custom CRM            │
+└─────────────────────────────┬────────────────────────────────────────  ┘
+                              │ Signals, Events, Records                  
+┌─────────────────────────────▼────────────────────────────────────────  ┐
 │              Bedrock Agent (Sales Supervisor Agent)                    │
-│   ┌────────────────────────────────────────────────────────────────┐ │
-│   │          Orchestration: Route, Prioritise, Coordinate           │ │
-│   └────────────────────────────────────────────────────────────────┘ │
-│                                                                       │
-│  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐  │
-│  │    Lead     │ │  Pipeline   │ │ Forecasting │ │    Deal     │  │
-│  │  Scoring   │ │ Management  │ │    Agent    │ │  Coaching   │  │
-│  │   Agent    │ │    Agent    │ │ (Accuracy & │ │   Agent     │  │
-│  │(Enrich &   │ │ (Stage Prog,│ │  Risk Flag) │ │(Next Best   │  │
-│  │  Score)    │ │ Next Action)│ │             │ │  Action)    │  │
-│  └──────┬─────┘ └──────┬──────┘ └──────┬──────┘ └──────┬──────┘  │
-└─────────┼──────────────┼───────────────┼────────────────┼──────────┘
-          │              │               │                │
-┌─────────▼──────────────▼───────────────▼────────────────▼──────────┐
-│                    Enterprise Data Layer                              │
-│  ┌──────────┐  ┌──────────────┐  ┌──────────┐  ┌───────────────┐  │
-│  │   CRM    │  │  Marketing   │  │   Comm   │  │  Firmographic │  │
-│  │ Records  │  │  Automation  │  │   Logs   │  │   & Intent    │  │
-│  │(Contacts,│  │(Marketo,     │  │(Email,   │  │    Data       │  │
-│  │ Opps,    │  │  Pardot,     │  │  Calls,  │  │  (6sense,     │  │
-│  │ Accounts)│  │  HubSpot)    │  │  Slack)  │  │  Bombora)     │  │
-│  └──────────┘  └──────────────┘  └──────────┘  └───────────────┘  │
-└────────────────────────────────────────────────────────────────────┘
+│   ┌────────────────────────────────────────────────────────────────┐   │
+│   │          Orchestration: Route, Prioritise, Coordinate           │  │
+│   └────────────────────────────────────────────────────────────────┘   │
+│                                                                        │
+│  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐       │
+│  │    Lead     │ │  Pipeline   │ │ Forecasting │ │    Deal     │       │
+│  │  Scoring   │ │ Management  │ │    Agent    │ │  Coaching   │        │
+│  │   Agent    │ │    Agent    │ │ (Accuracy & │ │   Agent     │        │
+│  │(Enrich &   │ │ (Stage Prog,│ │  Risk Flag) │ │(Next Best   │        │
+│  │  Score)    │ │ Next Action)│ │             │ │  Action)    │        │
+│  └──────┬─────┘ └──────┬──────┘ └──────┬──────┘ └──────┬──────┘        │
+└─────────┼──────────────┼───────────────┼────────────────┼──────────    ┘
+          │              │               │                               │
+┌─────────▼──────────────▼───────────────▼────────────────▼──────────    ┐
+│                    Enterprise Data Layer                               │
+│  ┌──────────┐  ┌──────────────┐  ┌──────────┐  ┌───────────────┐       │
+│  │   CRM    │  │  Marketing   │  │   Comm   │  │  Firmographic │       │
+│  │ Records  │  │  Automation  │  │   Logs   │  │   & Intent    │       │
+│  │(Contacts,│  │(Marketo,     │  │(Email,   │  │    Data       │       │
+│  │ Opps,    │  │  Pardot,     │  │  Calls,  │  │  (6sense,     │       │
+│  │ Accounts)│  │  HubSpot)    │  │  Slack)  │  │  Bombora)     │       │
+│  └──────────┘  └──────────────┘  └──────────┘  └───────────────┘       │
+└────────────────────────────────────────────────────────────────────    ┘
 ```
 
 ### Key AWS Services
